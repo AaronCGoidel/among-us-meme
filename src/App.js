@@ -1,25 +1,141 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  componentDidMount() {
+    document.title = "Serious Article";
+  }
+
+  render() {
+    return (
+      <>
+        <sky>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+          <star></star>
+        </sky>
+
+        <h1>
+          <span>E</span>
+          <span>t</span>
+          <span>h</span>
+          <span>a</span>
+          <span>n</span>
+          <span class="w"> </span>
+          <span>w</span>
+          <span>a</span>
+          <span>s</span>
+          <span class="w"> </span>
+          <span>e</span>
+          <span>j</span>
+          <span>e</span>
+          <span>c</span>
+          <span>t</span>
+          <span>e</span>
+          <span>d</span>
+          <span>.</span>
+        </h1>
+
+        <boi>
+          <rightleg></rightleg>
+          <leftleg></leftleg>
+          <backpack></backpack>
+          <belly></belly>
+          <eye></eye>
+          <leftleg></leftleg>
+        </boi>
+
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <filter id="inset" x="-50%" y="-50%" width="200%" height="200%">
+            <feFlood flood-color="black" result="outside-color" />
+            <feMorphology in="SourceAlpha" operator="dilate" radius="3.5" />
+            <feComposite
+              in="outside-color"
+              operator="in"
+              result="outside-stroke"
+            />
+            <feFlood flood-color="#0c9fc4" result="inside-color" />
+            <feComposite
+              in2="SourceAlpha"
+              operator="in"
+              result="inside-stroke"
+            />
+            <feMerge>
+              <feMergeNode in="outside-stroke" />
+              <feMergeNode in="inside-stroke" />
+            </feMerge>
+          </filter>
+        </svg>
+      </>
+    );
+  }
 }
 
 export default App;
